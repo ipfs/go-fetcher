@@ -1,4 +1,4 @@
-module github.com/ipfs/fetcher
+module github.com/ipfs/go-fetcher
 
 go 1.15
 
