@@ -10,6 +10,7 @@ require (
 	github.com/ipfs/go-ipfs-delay v0.0.1
 	github.com/ipfs/go-ipfs-routing v0.1.0
 	github.com/ipld/go-ipld-prime v0.7.0
+	github.com/ipld/go-ipld-prime-proto v0.1.1
 	github.com/magiconair/properties v1.8.0
 	github.com/stretchr/testify v1.6.1
 )
