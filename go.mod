@@ -12,6 +12,5 @@ require (
 	github.com/ipfs/go-ipfs-routing v0.1.0
 	github.com/ipld/go-codec-dagpb v1.2.0
 	github.com/ipld/go-ipld-prime v0.9.0
-	github.com/smartystreets/assertions v1.0.0 // indirect
 	github.com/stretchr/testify v1.6.1
 )
