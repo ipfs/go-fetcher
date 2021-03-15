@@ -10,8 +10,8 @@ require (
 	github.com/ipfs/go-cid v0.0.7
 	github.com/ipfs/go-ipfs-delay v0.0.1
 	github.com/ipfs/go-ipfs-routing v0.1.0
-	github.com/ipld/go-codec-dagpb v1.0.2-0.20210308154810-d05d02fa186e
-	github.com/ipld/go-ipld-prime v0.7.1-0.20210225173718-8fef5312eb12
+	github.com/ipld/go-codec-dagpb v1.0.2-0.20210315181218-e60519b4456e
+	github.com/ipld/go-ipld-prime v0.9.0
 	github.com/smartystreets/assertions v1.0.0 // indirect
 	github.com/stretchr/testify v1.6.1
 )
