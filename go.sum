@@ -192,6 +192,8 @@ github.com/ipld/go-codec-dagpb v1.0.2-0.20210308154810-d05d02fa186e h1:QXGG+qipD
 github.com/ipld/go-codec-dagpb v1.0.2-0.20210308154810-d05d02fa186e/go.mod h1:oYexiw3WkBIVD5UTNkVuOd0iyEcLxqytAQa90F3nH9M=
 github.com/ipld/go-codec-dagpb v1.0.2-0.20210315181218-e60519b4456e h1:i8cfKJJSSJS3N+FvpdC/CMuufCt7iY1Hk5zlAJeQ34s=
 github.com/ipld/go-codec-dagpb v1.0.2-0.20210315181218-e60519b4456e/go.mod h1:6nBN7X7h8EOsEejZGqC7tej5drsdBAXbMHyBT+Fne5s=
+github.com/ipld/go-codec-dagpb v1.0.2-0.20210315195704-748624f58f4d h1:215TYpwm+abwdJOPfpcjqekhEDi+4D6F79ic/g1R9T4=
+github.com/ipld/go-codec-dagpb v1.0.2-0.20210315195704-748624f58f4d/go.mod h1:6nBN7X7h8EOsEejZGqC7tej5drsdBAXbMHyBT+Fne5s=
 github.com/ipld/go-ipld-prime v0.7.0 h1:eigF1ZpaL1prbsKYVMqPLoPJqD/pzkQOe2j1uzvVg7w=
 github.com/ipld/go-ipld-prime v0.7.0/go.mod h1:0xEgdD6MKbZ1vF0GC+YcR/C4SQCAlRuOjIJ2i0HxqzM=
 github.com/ipld/go-ipld-prime v0.7.1-0.20210225173718-8fef5312eb12 h1:O9VMUYa2ktly9ql6W0LG0k8lXqg3bqz2ZfbaHXN3law=
