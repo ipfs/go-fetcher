@@ -11,6 +11,6 @@ require (
 	github.com/ipfs/go-ipfs-delay v0.0.1
 	github.com/ipfs/go-ipfs-routing v0.1.0
 	github.com/ipld/go-codec-dagpb v1.2.0
-	github.com/ipld/go-ipld-prime v0.9.0
+	github.com/ipld/go-ipld-prime v0.9.1-0.20210324083106-dc342a9917db
 	github.com/stretchr/testify v1.6.1
 )
