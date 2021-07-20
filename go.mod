@@ -3,7 +3,7 @@ module github.com/ipfs/go-fetcher
 go 1.15
 
 require (
-	github.com/ipfs/go-bitswap v0.3.3
+	github.com/ipfs/go-bitswap v0.3.4
 	github.com/ipfs/go-block-format v0.0.2
 	github.com/ipfs/go-blockservice v0.1.4
 	github.com/ipfs/go-cid v0.0.7
