@@ -1,6 +1,6 @@
 module github.com/ipfs/go-fetcher
 
-go 1.17
+go 1.18
 
 require (
 	github.com/ipfs/go-bitswap v0.5.1
