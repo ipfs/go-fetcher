@@ -21,6 +21,8 @@ func init() {
 }
 
 // Block fetches a schemaless node graph corresponding to single block by link.
+//
+// Deprecated: use github.com/ipfs/boxo/fetcher/helpers.Block
 func Block(ctx context.Context, f fetcher.Fetcher, link ipld.Link) (ipld.Node, error) {
 	prototype, err := f.PrototypeFromLink(link)
 	if err != nil {
@@ -31,12 +33,16 @@ func Block(ctx context.Context, f fetcher.Fetcher, link ipld.Link) (ipld.Node, e
 
 // BlockMatching traverses a schemaless node graph starting with the given link using the given selector and possibly crossing
 // block boundaries. Each matched node is sent to the FetchResult channel.
+//
+// Deprecated: use github.com/ipfs/boxo/fetcher/helpers.BlockMatching
 func BlockMatching(ctx context.Context, f fetcher.Fetcher, root ipld.Link, match ipld.Node, cb fetcher.FetchCallback) error {
 	return f.BlockMatchingOfType(ctx, root, match, nil, cb)
 }
 
 // BlockAll traverses all nodes in the graph linked by root. The nodes will be untyped and send over the results
 // channel.
+//
+// Deprecated: use github.com/ipfs/boxo/fetcher/helpers.BlockAll
 func BlockAll(ctx context.Context, f fetcher.Fetcher, root ipld.Link, cb fetcher.FetchCallback) error {
 	return f.BlockMatchingOfType(ctx, root, matchAllSelector, nil, cb)
 }

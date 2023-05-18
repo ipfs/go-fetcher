@@ -15,6 +15,8 @@ import (
 )
 
 // EncodeBlock produces an encoded block from a node
+//
+// Deprecated: use github.com/ipfs/boxo/fetcher/testutil.EncodeBlock
 func EncodeBlock(n ipld.Node) (blocks.Block, ipld.Node, ipld.Link) {
 	ls := cidlink.DefaultLinkSystem()
 	var b blocks.Block
