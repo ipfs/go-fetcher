@@ -8,15 +8,21 @@ import (
 )
 
 // BlockResult specifies a node at the top of a block boundary
+//
+// Deprecated: use github.com/ipfs/boxo/fetcher/helpers.BlockResult
 type BlockResult struct {
 	Node ipld.Node
 	Link ipld.Link
 }
 
 // BlockCallback is a callback for visiting blocks
+//
+// Deprecated: use github.com/ipfs/boxo/fetcher/helpers.BlockCallback
 type BlockCallback func(BlockResult) error
 
 // OnBlocks produces a fetch call back that only gets called when visiting blocks during a fetch
+//
+// Deprecated: use github.com/ipfs/boxo/fetcher/helpers.OnBlocks
 func OnBlocks(bv BlockCallback) fetcher.FetchCallback {
 	return func(fr fetcher.FetchResult) error {
 		if fr.LastBlockPath.String() == fr.Path.String() {
@@ -30,6 +36,8 @@ func OnBlocks(bv BlockCallback) fetcher.FetchCallback {
 }
 
 // OnUniqueBlocks is a callback that only gets called visiting each block once
+//
+// Deprecated: use github.com/ipfs/boxo/fetcher/helpers.OnUniqueBlocks
 func OnUniqueBlocks(bv BlockCallback) fetcher.FetchCallback {
 	set := cid.NewSet()
 	return OnBlocks(func(br BlockResult) error {

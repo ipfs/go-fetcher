@@ -22,6 +22,8 @@ type fetcherSession struct {
 }
 
 // FetcherConfig defines a configuration object from which Fetcher instances are constructed
+//
+// Deprecated: use github.com/ipfs/boxo/fetcher/impl/blockservice.FetcherConfig
 type FetcherConfig struct {
 	blockService     blockservice.BlockService
 	NodeReifier      ipld.NodeReifier
@@ -29,6 +31,8 @@ type FetcherConfig struct {
 }
 
 // NewFetcherConfig creates a FetchConfig from which session may be created and nodes retrieved.
+//
+// Deprecated: use github.com/ipfs/boxo/fetcher/impl/blockservice.NewFetcherConfig
 func NewFetcherConfig(blockService blockservice.BlockService) FetcherConfig {
 	return FetcherConfig{
 		blockService:     blockService,
@@ -124,6 +128,8 @@ func (f *fetcherSession) PrototypeFromLink(lnk ipld.Link) (ipld.NodePrototype, e
 
 // DefaultPrototypeChooser supports choosing the prototype from the link and falling
 // back to a basicnode.Any builder
+//
+// Deprecated: use github.com/ipfs/boxo/fetcher/impl/blockservice.DefaultPrototypeChooser
 var DefaultPrototypeChooser = func(lnk ipld.Link, lnkCtx ipld.LinkContext) (ipld.NodePrototype, error) {
 	if tlnkNd, ok := lnkCtx.LinkNode.(schema.TypedLinkNode); ok {
 		return tlnkNd.LinkTargetNodePrototype(), nil

@@ -8,6 +8,8 @@ import (
 
 // Fetcher is an interface for reading from a dag. Reads may be local or remote, and may employ data exchange
 // protocols like graphsync and bitswap
+//
+// Deprecated: use github.com/ipfs/boxo/fetcher.Fetcher
 type Fetcher interface {
 	// NodeMatching traverses a node graph starting with the provided root node using the given selector node and
 	// possibly crossing block boundaries. Each matched node is passed as FetchResult to the callback. Errors returned
@@ -35,6 +37,8 @@ type Fetcher interface {
 }
 
 // FetchResult is a single node read as part of a dag operation called on a fetcher
+//
+// Deprecated: use github.com/ipfs/boxo/fetcher.FetchResult
 type FetchResult struct {
 	Node          ipld.Node
 	Path          ipld.Path
@@ -43,9 +47,13 @@ type FetchResult struct {
 }
 
 // FetchCallback is called for each node traversed during a fetch
+//
+// Deprecated: use github.com/ipfs/boxo/fetcher.FetchCallback
 type FetchCallback func(result FetchResult) error
 
 // Factory is anything that can create new sessions of the fetcher
+//
+// Deprecated: use github.com/ipfs/boxo/fetcher.Factory
 type Factory interface {
 	NewSession(ctx context.Context) Fetcher
 }
