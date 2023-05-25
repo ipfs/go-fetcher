@@ -15,10 +15,6 @@ go-fetcher
 
 Go-fetcher is a library to retrieve IPLD prime nodes from IPFS using data exchange protocols
 
-## Contribute
-
-PRs are welcome!
-
 ## License
 
 The go-fetcher project is dual-licensed under Apache 2.0 and MIT terms:
